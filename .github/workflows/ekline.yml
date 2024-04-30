@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ekline-io/ekline-github-action@v5.8.0
+      - uses: ekline-io/ekline-github-action@latest
         with:
           content_dir: ./src/docs
           ek_token: ${{ secrets.EK_TOKEN }}
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           filter_mode: added
-          # ignore_rule: "EK00001,EK00004" # Optional 
+          # ignore_rule: "EK00001,EK00004" # Optional
