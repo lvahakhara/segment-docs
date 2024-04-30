@@ -4,14 +4,14 @@ on:
     types: [labeled]
 jobs:
   test-pr-review:
-  if: contains(github.event.label.name, 'ekline')
+    if: contains(github.event.label.name, 'ekline')
     name: runner / EkLine Reviewer (github-pr-review)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ekline-io/ekline-github-action@v5.8.0
+      - uses: ekline-io/ekline-github-action@latest
         with:
-          content_dir: ./src/docs
+          content_dir: ./src/guides
           ek_token: ${{ secrets.EK_TOKEN }}
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
