@@ -8,6 +8,7 @@ Audiences, Journeys, and Broadcasts are fundamental to [Twilio Engage](/docs/eng
 In this guide, you’ll learn how to choose between an Audience, a Journey, and a Broadcast for a number of marketing use cases across the customer lifecycle.
 
 ## Back to basics
+## Back to basics
 
 First, consider the following definitions for an Audience, Journey, and Broadcast.
 
