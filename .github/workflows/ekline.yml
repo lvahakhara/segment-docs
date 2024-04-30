@@ -16,4 +16,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           filter_mode: added
-          # ignore_rule: "EK00001,EK00004" # Optional
+          # ignore_rule: "EK00001,EK00004" # Optional 
